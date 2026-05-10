@@ -1,0 +1,24 @@
+:root {
+  --backcolor: #0D0E11;
+  --maincolor: #16181D;
+  --terciarycolor: #292C34;
+
+  /*txt*/
+  --txtprimary: #878EA1;
+  --txtseconday: #C0C4CE;
+  --txt-terciary: #E2E4E9;
+
+  /*fontes*/
+  font-family: "Archivo", sans-serif;
+  --h1: 800;
+  --h2: ;
+
+
+  background-color: #16181D;
+}
+
+h1 {
+  color: var(--txt-terciary);
+  font-weight: var(--h1);
+}
+
