@@ -6,13 +6,13 @@
 
 
 #initial {
-  background: var(--maincolor);
+  background: var(--maincolor); 
   height: 100vh;
   position: sticky;
   top: 0;
   z-index: 0;
   filter: blur(0px);
-  transform: scale(1); /* começa normal */
+  transform: scale(1); 
   transition: filter 0.2s linear, transform 0.2s linear;
 }
 
