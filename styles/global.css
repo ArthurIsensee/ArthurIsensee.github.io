@@ -2,6 +2,7 @@
   --backcolor: #0D0E11;
   --maincolor: #16181D;
   --terciarycolor: #292C34;
+  --brandcolor: rgb(104, 2, 135);
 
   /*txt*/
   --txtprimary: #878EA1;
@@ -17,9 +18,13 @@
   background-color: #16181D;
 }
 
-
+p {
+  color: var(--txtseconday);
+  font-size: large;
+}
 
 h1 {
+  text-shadow: 5px 5px 15px black;
   color: var(--txt-terciary);
   font-weight: var(--h1);
 }

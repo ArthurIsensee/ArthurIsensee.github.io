@@ -3,8 +3,6 @@
   padding: 0;
 }
 
-
-
 #initial {
   background: var(--maincolor); 
   height: 100vh;
@@ -14,5 +12,87 @@
   filter: blur(0px);
   transform: scale(1); 
   transition: filter 0.2s linear, transform 0.2s linear;
+  display: flex;
+  justify-content: center;
+  h1 {
+    place-self: center;
+    /* border: solid; */
+    padding: 20px;
+    font-size: 60px;
+  }
+
+  p {
+    margin: 30px;
+    text-align: center;
+    font-size: 25px;
+  }
+
+  div {
+    place-self: center;
+    /* border: solid; */
+    max-width: 900px;
+  }
 }
 
+#hab {
+  display: flex;
+  margin-top: 80px;
+
+  div {
+    padding: 15px;
+    margin-inline: 30px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  .card {
+    transition: background-color 0.5s ease;
+  }
+
+  .card img {
+    width: 90px;
+    height: 40px;
+    transition: opacity 0.3s ease;
+  }
+
+  .card:hover {
+    background-color: var(--brandcolor);
+  }
+
+  .card:hover #git{
+    content: url("/icon/GitHubdark.svg");
+    width: 90px;
+    height: 40px;
+  }
+  .card:hover #htm{
+    content: url("/icon/htmlred.svg");
+    width: 90px;
+    height: 40px;
+  }
+  .card:hover #js{
+    content: url("/icon/JavaScriptye.svg");
+    width: 90px;
+    height: 40px;
+  }
+  .card:hover #nod{
+    content: url("/icon/Nodegre.svg");
+    width: 90px;
+    height: 40px;
+  }
+  .card:hover #reat{
+    content: url("/icon/Reactblue.svg");
+    width: 90px;
+    height: 40px;
+  }
+  
+  
+}
+
+div #seta {
+  padding-top: 20vh;
+}
