@@ -4,7 +4,7 @@
 }
 
 #initial {
-  background: var(--maincolor); 
+  background: var(--backcolor); 
   height: 100vh;
   position: sticky;
   top: 0;
@@ -102,6 +102,6 @@
   
 }
 
-div #seta {
+#seta {
   padding-top: 20vh;
 }

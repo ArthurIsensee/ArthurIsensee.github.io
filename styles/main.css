@@ -4,5 +4,48 @@
 /*   background-color: var(--maincolor); */
   position: relative;
   z-index: 10;
-  height: 100vh;
+}
+
+.gride {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  padding-top: 72px;
+  padding-bottom: 120px;
+  padding-left: 120px;
+  padding-right: 120px;
+  row-gap: 24px;
+  column-gap: 24px;
+}
+
+.container {  
+
+ text-align: center;
+  /* height: 280px; */
+  background-color: var(--terciarycolor);
+  border-radius: 20px;
+  justify-items: center;
+  padding: 12px;
+  
+  img {
+    display: inline-block;
+    border-radius: 20px;
+    width: 400px;
+    max-height: 204px;
+  }
+
+  h2 {
+    margin-top: 10px;
+    color: var(--txt-terciary);
+  }
+
+  p {
+    padding: 10px;
+  }
+
+}
+
+#project {
+  padding-top: 72px;
+  justify-self: center;
 }
