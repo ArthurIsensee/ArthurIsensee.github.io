@@ -1,30 +1,29 @@
-
 #contato {
   position: relative;
   z-index: 11;
   background-color: black;
   height: auto;
   padding: 128px clamp(16px, 6vw, 120px) 200px clamp(16px, 6vw, 120px);
+
   header {
-    justify-items: center;
+    text-align: center;
     padding-bottom: 70px;
 
-    *{
+    * {
       margin-bottom: 15px;
     }
-   }
+  }
 
   #redes {
     display: grid;
-  justify-content: center; /* centraliza o grid */
-  row-gap: 30px;
-  grid-template-columns: 500px;
-  grid-auto-rows: 70px;
-  width: 100%;
-  max-width: 500px;
-  margin: 0 auto;  
+    justify-content: center;
+    row-gap: 30px;
+    grid-template-columns: minmax(0, 500px); 
+    grid-auto-rows: 70px;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
   }
-
 
   div {
     padding: 20px;
@@ -47,13 +46,14 @@
     font-weight: normal;
   }
 
-  .card{
+  .card {
     background-color: var(--terciarycolor);
-    transition: background-color 0.3s ease ;
+    transition: background-color 0.3s ease;
   }
 
   .card:hover {
     background-color: var(--brandcolor);
+
     .arrow {
       content: url(/icon/ArrowUpRighta.svg);
     }
@@ -66,11 +66,8 @@
     padding-bottom: 120px;
   }
 
-  #redes {
-    grid-template-columns: 1fr;
+  #contato #redes {
+    grid-template-columns: 1fr; 
     max-width: none;
   }
 }
-
-
-

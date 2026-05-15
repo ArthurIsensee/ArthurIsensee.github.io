@@ -1,14 +1,15 @@
-.main  {
-   background-image: url(/images/Background_Intro.png);
-   background-size: cover;
-/*   background-color: var(--maincolor); */
+.main {
+  background-image: url(/images/Background_Intro.png);
+  background-size: cover;
   position: relative;
   z-index: 10;
 }
 
-/*
-  Responsivo sem alterar o “visual”: só ajusta layout/medidas para não estourar em telas pequenas.
-*/
+#project {
+  padding-top: 72px;
+  text-align: center; /* garante centralização em qualquer largura */
+}
+
 .gride {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -21,15 +22,13 @@
   column-gap: 24px;
 }
 
-.container {  
- 
- text-align: center;
-  /* height: 280px; */
+.container {
+  text-align: center;
   background-color: var(--terciarycolor);
   border-radius: 20px;
   justify-items: center;
   padding: 12px;
-  
+
   img {
     display: inline-block;
     border-radius: 20px;
@@ -47,12 +46,6 @@
   p {
     padding: 10px;
   }
-
-}
-
-#project {
-  padding-top: 72px;
-  justify-self: center;
 }
 
 @media (max-width: 1024px) {
@@ -62,6 +55,10 @@
 }
 
 @media (max-width: 640px) {
+  #project {
+    padding-top: 48px;
+  }
+
   .gride {
     grid-template-columns: 1fr;
     padding-top: 40px;
@@ -70,4 +67,3 @@
     column-gap: 0;
   }
 }
-

@@ -14,33 +14,34 @@
   transition: filter 0.2s linear, transform 0.2s linear;
   display: flex;
   justify-content: center;
+
   h1 {
     place-self: center;
-    /* border: solid; */
     padding: 20px;
-    font-size: 60px;
+    font-size: clamp(32px, 6vw, 60px); /* era 60px fixo */
   }
 
   p {
     margin: 30px;
     text-align: center;
-    font-size: 25px;
+    font-size: clamp(16px, 2.5vw, 25px); /* era 25px fixo */
   }
 
   div {
     place-self: center;
-    /* border: solid; */
     max-width: 900px;
   }
 }
 
 #hab {
   display: flex;
+  flex-wrap: wrap;       /* impede overflow em telas estreitas */
+  justify-content: center; /* centraliza quando quebra linha */
   margin-top: 80px;
 
   div {
     padding: 15px;
-    margin-inline: 30px;
+    margin-inline: 12px;  /* era 30px, reduzi para não estourar */
     background-color: rgb(0, 0, 0);
     border-radius: 20px;
     height: 20px;
@@ -73,35 +74,55 @@
     box-shadow: -10px 10px 10px rgb(0, 0, 0);
   }
 
-  .card:hover #git{
+  .card:hover #git {
     content: url("/icon/GitHubdark.svg");
     width: 90px;
     height: 40px;
   }
-  .card:hover #htm{
+  .card:hover #htm {
     content: url("/icon/htmlred.svg");
     width: 90px;
     height: 40px;
   }
-  .card:hover #js{
+  .card:hover #js {
     content: url("/icon/JavaScriptye.svg");
     width: 90px;
     height: 40px;
   }
-  .card:hover #nod{
+  .card:hover #nod {
     content: url("/icon/Nodegre.svg");
     width: 90px;
     height: 40px;
   }
-  .card:hover #reat{
+  .card:hover #reat {
     content: url("/icon/Reactblue.svg");
     width: 90px;
     height: 40px;
   }
-  
-  
 }
 
 #seta {
-  padding-top: 20vh;
+  padding-top: clamp(24px, 10vh, 20vh); /* era 20vh fixo, pode sumir em telas curtas */
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  #hab div {
+    margin-inline: 6px;
+  }
+
+  #hab .card img {
+    width: 64px;
+    height: 30px;
+  }
+
+  /* Corrige os content: url() no hover para o tamanho menor */
+  #hab .card:hover #git,
+  #hab .card:hover #htm,
+  #hab .card:hover #js,
+  #hab .card:hover #nod,
+  #hab .card:hover #reat {
+    width: 64px;
+    height: 30px;
+  }
 }
