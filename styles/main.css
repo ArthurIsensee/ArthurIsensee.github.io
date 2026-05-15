@@ -6,20 +6,23 @@
   z-index: 10;
 }
 
+/*
+  Responsivo sem alterar o “visual”: só ajusta layout/medidas para não estourar em telas pequenas.
+*/
 .gride {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   justify-items: center;
   padding-top: 72px;
   padding-bottom: 120px;
-  padding-left: 120px;
-  padding-right: 120px;
+  padding-left: clamp(16px, 6vw, 120px);
+  padding-right: clamp(16px, 6vw, 120px);
   row-gap: 24px;
   column-gap: 24px;
 }
 
 .container {  
-
+ 
  text-align: center;
   /* height: 280px; */
   background-color: var(--terciarycolor);
@@ -30,7 +33,9 @@
   img {
     display: inline-block;
     border-radius: 20px;
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
     max-height: 204px;
   }
 
@@ -49,3 +54,20 @@
   padding-top: 72px;
   justify-self: center;
 }
+
+@media (max-width: 1024px) {
+  .gride {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .gride {
+    grid-template-columns: 1fr;
+    padding-top: 40px;
+    padding-bottom: 80px;
+    row-gap: 20px;
+    column-gap: 0;
+  }
+}
+
