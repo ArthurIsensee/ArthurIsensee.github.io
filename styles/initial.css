@@ -21,8 +21,6 @@
   place-self: center;
   padding: 20px;
   font-size: clamp(32px, 6dvw, 60px);
-  text-align: center;
-  width: 100%;
 }
 
 #initial p {
@@ -34,6 +32,11 @@
 #initial div {
   place-self: center;
   max-width: 900px;
+}
+
+#initial > div {
+  text-align: center;
+  width: 100%;
 }
 
 #hab {
