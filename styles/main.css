@@ -7,7 +7,7 @@
 
 #project {
   padding-top: 72px;
-  text-align: center; /* garante centralização em qualquer largura */
+  text-align: center;
 }
 
 .gride {
@@ -28,24 +28,24 @@
   border-radius: 20px;
   justify-items: center;
   padding: 12px;
+}
 
-  img {
-    display: inline-block;
-    border-radius: 20px;
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-    max-height: 204px;
-  }
+.container img {
+  display: inline-block;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  max-height: 204px;
+}
 
-  h2 {
-    margin-top: 10px;
-    color: var(--txt-terciary);
-  }
+.container h2 {
+  margin-top: 10px;
+  color: var(--txt-terciary);
+}
 
-  p {
-    padding: 10px;
-  }
+.container p {
+  padding: 10px;
 }
 
 @media (max-width: 1024px) {

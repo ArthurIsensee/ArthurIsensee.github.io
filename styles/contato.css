@@ -4,60 +4,60 @@
   background-color: black;
   height: auto;
   padding: 128px clamp(16px, 6vw, 120px) 200px clamp(16px, 6vw, 120px);
+}
 
-  header {
-    text-align: center;
-    padding-bottom: 70px;
+#contato header {
+  text-align: center;
+  padding-bottom: 70px;
+}
 
-    * {
-      margin-bottom: 15px;
-    }
-  }
+#contato header * {
+  margin-bottom: 15px;
+}
 
-  #redes {
-    display: grid;
-    justify-content: center;
-    row-gap: 30px;
-    grid-template-columns: minmax(0, 500px); 
-    grid-auto-rows: 70px;
-    width: 100%;
-    max-width: 500px;
-    margin: 0 auto;
-  }
+#redes {
+  display: grid;
+  justify-content: center;
+  row-gap: 30px;
+  grid-template-columns: minmax(0, 500px);
+  grid-auto-rows: 70px;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
 
-  div {
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 8px;
-    border-radius: 8px;
-  }
+#contato div {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  border-radius: 8px;
+}
 
-  h2 {
-    color: var(--brandcolor);
-    font-weight: normal;
-    letter-spacing: 2px;
-  }
+#contato h2 {
+  color: var(--brandcolor);
+  font-weight: normal;
+  letter-spacing: 2px;
+}
 
-  h4 {
-    color: white;
-    font-size: large;
-    font-weight: normal;
-  }
+#contato h4 {
+  color: white;
+  font-size: large;
+  font-weight: normal;
+}
 
-  .card {
-    background-color: var(--terciarycolor);
-    transition: background-color 0.3s ease;
-  }
+#contato .card {
+  background-color: var(--terciarycolor);
+  transition: background-color 0.3s ease;
+}
 
-  .card:hover {
-    background-color: var(--brandcolor);
+#contato .card:hover {
+  background-color: var(--brandcolor);
+}
 
-    .arrow {
-      content: url(/icon/ArrowUpRighta.svg);
-    }
-  }
+#contato .card:hover .arrow {
+  content: url(/icon/ArrowUpRighta.svg);
 }
 
 @media (max-width: 640px) {
@@ -67,7 +67,7 @@
   }
 
   #contato #redes {
-    grid-template-columns: 1fr; 
+    grid-template-columns: 1fr;
     max-width: none;
   }
 }
