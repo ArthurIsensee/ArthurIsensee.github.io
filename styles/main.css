@@ -16,8 +16,8 @@
   justify-items: center;
   padding-top: 72px;
   padding-bottom: 120px;
-  padding-left: clamp(16px, 6vw, 120px);
-  padding-right: clamp(16px, 6vw, 120px);
+  padding-left: clamp(16px, 6dvw, 120px);
+  padding-right: clamp(16px, 6dvw, 120px);
   row-gap: 24px;
   column-gap: 24px;
 }

@@ -20,13 +20,13 @@
 #initial h1 {
   place-self: center;
   padding: 20px;
-  font-size: clamp(32px, 6vw, 60px);
+  font-size: clamp(32px, 6dvw, 60px);
 }
 
 #initial p {
   margin: 30px;
   text-align: center;
-  font-size: clamp(16px, 2.5vw, 25px);
+  font-size: clamp(16px, 2.5dvw, 25px);
 }
 
 #initial div {
@@ -108,6 +108,8 @@
 
 #seta {
   padding-top: clamp(24px, 10dvh, 20dvh);
+  text-align: center;
+  width: 100%;
 }
 
 @media (max-width: 640px) {

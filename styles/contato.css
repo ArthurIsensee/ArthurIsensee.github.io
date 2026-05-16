@@ -3,7 +3,7 @@
   z-index: 11;
   background-color: black;
   height: auto;
-  padding: 128px clamp(16px, 6vw, 120px) 200px clamp(16px, 6vw, 120px);
+  padding: 128px clamp(16px, 6dvw, 120px) 200px clamp(16px, 6dvw, 120px);
 }
 
 #contato header {
