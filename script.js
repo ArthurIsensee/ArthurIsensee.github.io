@@ -11,7 +11,7 @@ window.addEventListener("scroll", () => {
 });
 
 document.getElementById("insta").addEventListener("click", () => {
-  safeRedirect("https://www.instagram.com/seuPerfil", true);
+  safeRedirect("https://www.instagram.com/artyur_vx/", true);
 });
 
 document.getElementById("email").addEventListener("click", () => {
