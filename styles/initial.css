@@ -21,6 +21,8 @@
   place-self: center;
   padding: 20px;
   font-size: clamp(32px, 6dvw, 60px);
+  text-align: center;
+  width: 100%;
 }
 
 #initial p {
