@@ -23,11 +23,11 @@ body, .container, .main, h1, h2, h3, p, #initial {
 }
 
 body.light {
-  --backcolor: #F6F7FB;       /* fundo geral */
-  --maincolor: #FFFFFF;       /* fundo principal */
-  --terciarycolor: #E9ECF5;   /* cartões / containers */
-  --brandcolor: #6D28D9;      /* roxo elegante */
-  --botaocor: #FFFFFF;        /* fundo de blocos */
+  --backcolor: #F6F7FB;       
+  --maincolor: #FFFFFF;     
+  --terciarycolor: #E9ECF5;
+  --brandcolor: #6D28D9; 
+  --botaocor: #FFFFFF;      
 
   /* textos */
   --txtprimary: #4B5563;
@@ -54,9 +54,14 @@ position: fixed;
   z-index: 1000;
 }
 
+#theme-toggle {
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
 #theme-toggle:hover{
   background-color: rgb(186, 186, 186);
 }
+
 
 
 

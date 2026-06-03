@@ -13,7 +13,7 @@ function toggleTheme() {
     themeToggle.style.color = "white";
     elemento.style.backgroundImage = `url('${novaImagem}')`;
   } else {
-    themeToggle.innerHTML = "☀︎";
+    themeToggle.innerHTML = "𖤓";
     themeToggle.style.backgroundColor = "white";
     themeToggle.style.color = "black";
     // remove o inline style para voltar a imagem via CSS (Background_Intro.png)
@@ -21,8 +21,7 @@ function toggleTheme() {
   }
 }
 
-// Adiciona evento de clique
 themeToggle.addEventListener("click", toggleTheme);
 
-// Define tema inicial (opcional)
+// Define tema inicial 
 document.body.classList.add("dark");
