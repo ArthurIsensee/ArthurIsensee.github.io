@@ -1,7 +1,7 @@
 #contato {
   position: relative;
   z-index: 11;
-  background-color: black;
+  background-color: var(--botaocor);
   height: auto;
   padding: 128px clamp(16px, 6dvw, 120px) 200px clamp(16px, 6dvw, 120px);
 }
@@ -42,7 +42,7 @@
 }
 
 #contato h4 {
-  color: white;
+  color: var(--txtseconday);
   font-size: large;
   font-weight: normal;
 }

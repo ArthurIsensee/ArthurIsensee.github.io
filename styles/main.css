@@ -1,8 +1,15 @@
 .main {
-  background-image: url(/images/Background_Intro.png);
   background-size: cover;
   position: relative;
   z-index: 10;
+}
+
+body:not(.light) .main {
+  background-image: url(/images/Background_Intro.png);
+}
+
+body.light .main {
+  background-image: url(/images/Intro_light_mode.png);
 }
 
 #project {
